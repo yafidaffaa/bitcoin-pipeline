@@ -1,6 +1,3 @@
-# bitcoin-pipeline
-Automated Bitcoin price data pipeline using Airflow, dbt, and PostgreSQL
-
 # Bitcoin Price Data Pipeline
 
 Pipeline data otomatis untuk mengambil, memproses, dan menganalisis data harga Bitcoin menggunakan Apache Airflow, dbt, dan PostgreSQL.
