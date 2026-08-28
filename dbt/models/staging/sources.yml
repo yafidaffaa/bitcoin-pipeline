@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: raw
+    database: bitcoin_db
+    schema: raw
+    tables:
+      - name: bitcoin_prices
+        description: "Data harga Bitcoin mentah dari CoinGecko API"
+        columns:
+          - name: id
+            description: "Primary key auto increment"
+          - name: date
+            description: "Tanggal data harga"
+          - name: close
+            description: "Harga penutupan Bitcoin dalam USD"
+          - name: volume
+            description: "Volume trading dalam USD"
+          - name: market_cap
+            description: "Market capitalization dalam USD"
+          - name: created_at
+            description: "Waktu data masuk ke database"

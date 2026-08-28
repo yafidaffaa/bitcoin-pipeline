@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: stg_bitcoin_prices
+    description: "Data harga Bitcoin yang sudah dibersihkan dari raw"
+    columns:
+      - name: price_date
+        description: "Tanggal harga Bitcoin"
+        tests:
+          - not_null
+          - unique
+
+      - name: close_price
+        description: "Harga penutupan Bitcoin dalam USD"
+        tests:
+          - not_null
+
+      - name: volume_usd
+        description: "Volume trading dalam USD"
+        tests:
+          - not_null
+
+      - name: market_cap_usd
+        description: "Market capitalization dalam USD"
+        tests:
+          - not_null
+
+      - name: price_category
+        description: "Kategori harga: high, medium, low"
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['high', 'medium', 'low']

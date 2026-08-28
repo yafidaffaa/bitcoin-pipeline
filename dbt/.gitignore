@@ -1,0 +1,26 @@
+# Environment variables
+.env
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/.user.yml
+dbt/profiles.yml
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Airflow logs
+logs/
+
+# VSCode
+.vscode/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# MacOS
+.DS_Store
